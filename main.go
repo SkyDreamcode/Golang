@@ -18,5 +18,6 @@ func main(){
 	fmt.Println("myPrint end print");
 	strPrint.StrPrint();
 	varPrint.VarPrint();
+	varPrint.ConstPrint();
 	
 }
