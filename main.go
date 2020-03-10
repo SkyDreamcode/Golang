@@ -2,6 +2,8 @@ package main //defaine package name
 
 import "./myMath"//let the compiler know that program uses our own defined package  
 import "fmt" //let compiler know that the program uses package fmt
+import "./printTest"
+import "./varprint"
 
 func myPrint(){
 	fmt.Println("start leran go program");
@@ -10,8 +12,11 @@ func myPrint(){
 
 }
 
+
 func main(){
 	myPrint();
-	fmt.Println("end print");
+	fmt.Println("myPrint end print");
+	strPrint.StrPrint();
+	varPrint.VarPrint();
 	
 }
