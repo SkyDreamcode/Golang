@@ -58,6 +58,24 @@ func VarPrint(){
 	fmt.Printf("lk=%s\n", lk);
 }
 
+var intVal int = 10
+var strVal string = "golang"
+
+
+func GlobleVarTest(){
+	var intVal int = 30
+	var strVal string = "golang hello"
+	
+	fmt.Println("intVal = ", intVal);
+	fmt.Println("strVal = ", strVal);
+
+	{
+		intVal := 50
+		strVal := "golang word"
+		fmt.Println("intVal := ", intVal)
+		fmt.Println("strVal := ", strVal)
+	}
+}
 
 
 func funtest()(int ,string){

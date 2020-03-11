@@ -1,10 +1,17 @@
 package main //defaine package name
 
 //import "./myMath"//let the compiler know that program uses our own defined package  
-import "fmt" //let compiler know that the program uses package fmt
 //import "./printTest"
 //import "./varprint"
-import "./primeNumber"
+//import "./primeNumber"
+//import "./arithmetic"
+//import "./structtest"
+//import "./slice"
+import( 
+	"fmt" //let compiler know that the program uses package fmt
+	//"./range"
+	"./arithmetic"
+)
 
 /*
 func myPrint(){
@@ -20,9 +27,22 @@ func main(){
 	//fmt.Println("myPrint end print");
 	//strPrint.StrPrint();
 	//varPrint.VarPrint();
+	//varPrint.GlobleVarTest();
 	//varPrint.ConstPrint();
 	//primeNumber.PrimeNumber();
-	var c bool
-	c = primeNumber.PrimeNumber1(50);
-	fmt.Println("c=", c);
+	//var c bool
+	//c = primeNumber.PrimeNumber1(50);
+	//fmt.Println("c=", c);
+	
+	//var b bool
+	//b = arithmetic.YhuiTriangle(12);
+	//fmt.Println("b = ", b);
+
+	var a bool
+	//a = structTest.StructTest(12)
+	//a = slicePro.SliceTest()
+	//a = rangePro.RangeTest()
+	//a = arithmetic.ArithFactorial()
+	a = arithmetic.ArithFibonacci()
+	fmt.Println("a = ", a)
 }
