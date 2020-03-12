@@ -10,7 +10,9 @@ package main //defaine package name
 import( 
 	"fmt" //let compiler know that the program uses package fmt
 	//"./range"
-	"./arithmetic"
+	//"./arithmetic"
+	//"./interface"
+	"./concurrence"
 )
 
 /*
@@ -43,6 +45,8 @@ func main(){
 	//a = slicePro.SliceTest()
 	//a = rangePro.RangeTest()
 	//a = arithmetic.ArithFactorial()
-	a = arithmetic.ArithFibonacci()
+	//a = arithmetic.ArithFibonacci()
+	//a = interfacePro.InterfaceTest()
+	a = concurrencePro.ConcurrenceTest()
 	fmt.Println("a = ", a)
 }
